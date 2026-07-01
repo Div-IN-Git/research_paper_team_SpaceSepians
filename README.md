@@ -1,1 +1,10 @@
-# research_paper_team_SpaceSepians
+Brief about your Idea
+
+Our solution proposes an AI-driven framework for forecasting and nowcasting solar flares using only Aditya-L1's X-ray payloads—SoLEXS (soft X-rays) and HEL1OS (hard X-rays). Unlike existing approaches that heavily depend on magnetograms from instruments such as NASA's HMI, our framework investigates whether temporal precursor signatures contained within combined soft and hard X-ray light curves are sufficient for operational flare prediction. The pipeline includes automated ingestion of Level-1 telemetry, timestamp synchronization, quality assessment, physics-inspired feature engineering, and a multi-branch deep learning architecture that fuses soft X-ray, hard X-ray, and engineered temporal features. The system generates probabilistic multi-horizon forecasts (15, 30, 45, and 60 minutes), flare class prediction, confidence estimation, explainable AI outputs, and real-time alerts through an interactive monitoring dashboard.
+
+What problem are you trying to solve?
+
+Solar flares are among the primary drivers of space weather and can significantly affect satellite operations, communication systems, navigation, aviation, and power infrastructure. Current forecasting methods often rely on solar magnetograms and imagery from missions such as NASA's Solar Dynamics Observatory, limiting their applicability when only X-ray observations are available. Aditya-L1 provides continuous soft and hard X-ray observations through SoLEXS and HEL1OS, but there is currently no operational AI framework specifically designed to exploit these complementary data streams for flare forecasting.
+
+Our objective is to determine whether precursor information embedded in combined soft and hard X-ray temporal evolution can be used to predict impending flares without depending on external magnetic-field observations. The proposed framework addresses data synchronization between heterogeneous instruments, robust preprocessing of noisy telemetry, extraction of physics-inspired temporal features, and probabilistic multi-horizon forecasting. A successful solution would provide earlier and more reliable flare warnings while establishing an AI-driven forecasting methodology tailored specifically to Aditya-L1 observations.
+
